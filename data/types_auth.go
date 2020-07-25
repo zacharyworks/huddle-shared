@@ -12,14 +12,13 @@ type Session struct {
 // OauthResponse represents a response from oAuth
 type OauthResponse struct {
 	Response Response `json:"Response"`
-	Name string `json:"name"`
-	GivenName string `json:"givenName"`
-	FamilyName string `json:"familyName"`
 }
-
 // Response from oAuth
 type Response struct {
 	ID      string `json:"iD"`
 	Email   string `json:"email"`
 	Picture string `json:"picture"`
+	Name string `json:"name"`
+	GivenName string `json:"givenName"`
+	FamilyName string `json:"familyName"`
 }

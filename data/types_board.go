@@ -3,6 +3,7 @@ package types
 // Board struct representing a board table entry
 type Board struct {
 	BoardID int `json:"boardID"`
+	BoardType int `json:"boardType"`
 	Name    string `json:"name"`
 }
 
@@ -23,6 +24,6 @@ type BoardJoinCode struct {
 }
 
 type BoardJoin struct {
-	UserFK int    `json:"userFK"`
+	UserFK string    `json:"userFK"`
 	Code   string `json:"code"`
 }

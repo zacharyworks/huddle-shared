@@ -11,3 +11,13 @@ type BoardMember struct {
 	BoardFK string `json:"boardFK"`
 	UserFK  string `json:"userFK"`
 }
+
+type NewBoard struct {
+	BoardFK int `json:"boardFK"`
+	Code string `json:"code"`
+}
+
+type JoinBoard struct {
+	UserFK int `json:"userFK"`
+	Code string `json:"code"`
+}

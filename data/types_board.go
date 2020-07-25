@@ -18,6 +18,11 @@ type NewBoard struct {
 }
 
 type BoardJoinCode struct {
+	BoardFK int    `json:"boardFK"`
+	Code   string `json:"code"`
+}
+
+type BoardJoin struct {
 	UserFK int    `json:"userFK"`
 	Code   string `json:"code"`
 }

@@ -29,13 +29,13 @@ func ConnectDB(cred Credentials) {
 	db.WriteString(cred.DbPort)
 	db.WriteString(")/")
 	db.WriteString(cred.DbName)
+
 	var err error
 	DbCon, err = sql.Open("mysql", db.String())
 
 	if err != nil {
 		log.Fatal(err)
-	} else {
-		println("connected")
+		return
 	}
-
+	println("connected")
 }

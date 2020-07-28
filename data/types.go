@@ -2,14 +2,14 @@ package types
 
 // StringAction an action with a string as the payload
 type StringAction struct {
-	ActionSubset  string `json:"ActionSubset"`
-	ActionType    string `json:"ActionType"`
-	ActionPayload string `json:"ActionPayload"`
+	Subset  string `json:"action"`
+	Type    string `json:"type"`
+	Payload string `json:"payload"`
 }
 
 // StringAction an action with a string as the payload
 type Action struct {
-	Subset  string `json:"ActionSubset"`
-	Type    string `json:"ActionType"`
-	Payload interface{} `json:"ActionPayload"`
+	Subset  string `json:"subset"`
+	Type    string `json:"type"`
+	Payload interface{} `json:"payload"`
 }

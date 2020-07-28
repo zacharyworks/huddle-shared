@@ -9,7 +9,7 @@ type StringAction struct {
 
 // StringAction an action with a string as the payload
 type Action struct {
-	ActionSubset  string `json:"ActionSubset"`
-	ActionType    string `json:"ActionType"`
-	ActionPayload interface{} `json:"ActionPayload"`
+	Subset  string `json:"ActionSubset"`
+	Type    string `json:"ActionType"`
+	Payload interface{} `json:"ActionPayload"`
 }
